@@ -27,11 +27,11 @@ After compiling, run the program by providing the secret code word as a command-
 
 
 ## Functions
-**setColour(const char *colour):** Sets the terminal color using ANSI escape codes if the color hasn't been set already.
+setColour(const char *colour): Sets the terminal color using ANSI escape codes if the color hasn't been set already.
 
-**printColorizedGuess(const char* guess, const char* code):** Compares the user’s guess to the code word and prints each character colorized based on whether it is correct, partially correct, or incorrect.
+printColorizedGuess(const char* guess, const char* code): Compares the user’s guess to the code word and prints each character colorized based on whether it is correct, partially correct, or incorrect.
 
-**main():** The main game loop prompts the user to guess the code word. It checks if the guess is correct, partially correct, or wrong and provides colorized feedback.
+main(): The main game loop prompts the user to guess the code word. It checks if the guess is correct, partially correct, or wrong and provides colorized feedback.
 
 ## Color Codes
 Green (\x1b[32m): Correct character and position.
