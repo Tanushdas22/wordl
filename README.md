@@ -19,23 +19,25 @@ You will need a C compiler such as gcc to compile and run the program.
 
 ## Compilation
 Use the following command to compile the program:
-  *bash*
   gcc -o guess_game guess_game.c
 
 ## Running the Program
 After compiling, run the program by providing the secret code word as a command-line argument:
-  *bash*
   ./guess_game <code_word>
 
 
 ## Functions
 **setColour(const char *colour):** Sets the terminal color using ANSI escape codes if the color hasn't been set already.
+
 **printColorizedGuess(const char* guess, const char* code):** Compares the user’s guess to the code word and prints each character colorized based on whether it is correct, partially correct, or incorrect.
+
 **main():** The main game loop prompts the user to guess the code word. It checks if the guess is correct, partially correct, or wrong and provides colorized feedback.
 
 ## Color Codes
 Green (\x1b[32m): Correct character and position.
+
 Yellow (\x1b[33m): Correct character but wrong position.
+
 White (\x1b[0m): Incorrect character.
 
 ## Notes
