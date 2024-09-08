@@ -1,4 +1,4 @@
-## Wordl
+# Wordl
 This repository contains a terminal-based guessing game implemented in C, where the user tries to guess a secret code word. The program provides visual feedback by colorizing correct, partially correct, and incorrect guesses.
 
 ## How the Game Works
@@ -14,16 +14,15 @@ Dynamic Memory Allocation: The program dynamically allocates memory for arrays d
 Color-coded Feedback: It uses ANSI escape sequences to colorize the output based on correctness.
 Input Validation: Ensures the user inputs guesses of the correct length.
 
-## Getting Started
-# Prerequisites
+## Prerequisites
 You will need a C compiler such as gcc to compile and run the program.
 
-# Compilation
+## Compilation
 Use the following command to compile the program:
   *bash*
   gcc -o guess_game guess_game.c
 
-# Running the Program
+## Running the Program
 After compiling, run the program by providing the secret code word as a command-line argument:
   *bash*
   ./guess_game <code_word>
@@ -39,6 +38,6 @@ Green (\x1b[32m): Correct character and position.
 Yellow (\x1b[33m): Correct character but wrong position.
 White (\x1b[0m): Incorrect character.
 
-# Notes
+## Notes
 Ensure that the word guessed is the same length as the secret code word.
 The code allocates memory dynamically and ensures memory is freed after use to avoid memory leaks.
